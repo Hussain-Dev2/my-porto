@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import { handlers } from "@/app/auth"
 
 export const GET = handlers.GET
