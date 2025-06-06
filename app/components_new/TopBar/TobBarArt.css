@@ -1,0 +1,24 @@
+
+
+.con{
+    background:linear-gradient(to right, #858d71 5%,#0b2c3d 90% );
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+    ;
+}
+
+.btn-login{
+    background:linear-gradient(to left, #000000 5%,#0b2c3d 90%);
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+.btn-login:hover{
+  
+    color: #fff;
+    scale: 1.05;
+    transition: all 0.3s ease-in-out;
+}
