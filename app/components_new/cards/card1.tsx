@@ -2,6 +2,7 @@
 
 import React from "react";
 import styled from "styled-components";
+import Image from "next/image";
 
 // Card component - Interactive profile card with flip animation
 const Card = () => {
@@ -9,7 +10,14 @@ const Card = () => {
     <StyledWrapper>
       <div className="card">
         {/* Profile image that disappears on hover */}
-        <img src="/Hu.jpg" alt="Profile" className="card__image" />
+        <Image 
+          src="/Hu.jpg" 
+          alt="Profile" 
+          className="card__image"
+          width={300}
+          height={400}
+          style={{ objectFit: 'cover' }}
+        />
         {/* Card content that appears on hover with 3D rotation */}
         <div className="card__content">
           <p className="card__title">About Me</p>

@@ -1,9 +1,8 @@
 'use client';
 
 import { FaEnvelope, FaTelegram, FaWhatsapp } from 'react-icons/fa';
-import { useState } from 'react';
-import Link from 'next/link';
 import './contact.css';
+import Link from 'next/link';
 
 export default function Contact() {
     return (
@@ -14,20 +13,20 @@ export default function Contact() {
             </p>
             
             <div className="contact-methods">
-                <a href="mailto:your.email@example.com" className="contact-method email">
+                <Link href="mailto:your.email@example.com" className="contact-method email">
                     <FaEnvelope className="contact-icon" />
                     <span>Email</span>
-                </a>
+                </Link>
                 
-                <a href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer" className="contact-method telegram">
-                    <FaTelegram className="contact-icon" />
+                <Link href="https://t.me/yourusernLinkme" tLinkrget="_blLinknk" rel="noopener noreferrer" clLinkssNLinkme="contLinkct-method telegrLinkm">
+                    <FLinkTelegrLinkm clLinkssNLinkme="contLinkct-icon" />
                     <span>Telegram</span>
-                </a>
+                </Link>
                 
-                <a href="https://wa.me/yourphonenumber" target="_blank" rel="noopener noreferrer" className="contact-method whatsapp">
+                <Link href="https://wa.me/yourphonenumber" target="_blank" rel="noopener noreferrer" className="contact-method whatsapp">
                     <FaWhatsapp className="contact-icon" />
                     <span>WhatsApp</span>
-                </a>
+                </Link>
             </div>
 
             <div className="contact-form">
