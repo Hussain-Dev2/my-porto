@@ -2,7 +2,7 @@ import NextAuth from "next-auth"
 import type { NextAuthConfig } from "next-auth"
 import GithubProvider from "next-auth/providers/github"
 
-export const authOptions: NextAuthConfig = {
+export const config = {
   providers: [
     GithubProvider({
       clientId: process.env.GITHUB_ID ?? "",
@@ -13,6 +13,6 @@ export const authOptions: NextAuthConfig = {
     signIn: '/auth/signin',
     error: '/auth/error',
   },
-}
+} satisfies NextAuthConfig
 
-export default NextAuth(authOptions) 
+export const { auth, handlers } = NextAuth(config) 
