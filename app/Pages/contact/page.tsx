@@ -18,15 +18,15 @@ export default function Contact() {
                     <span>Email</span>
                 </Link>
                 
-                <Link href="https://t.me/yourusernLinkme" tLinkrget="_blLinknk" rel="noopener noreferrer" clLinkssNLinkme="contLinkct-method telegrLinkm">
-                    <FLinkTelegrLinkm clLinkssNLinkme="contLinkct-icon" />
+                <a href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer" className="contact-method telegram">
+                    <FaTelegram className="contact-icon" />
                     <span>Telegram</span>
-                </Link>
+                </a>
                 
-                <Link href="https://wa.me/yourphonenumber" target="_blank" rel="noopener noreferrer" className="contact-method whatsapp">
+                <a href="https://wa.me/yourphonenumber" target="_blank" rel="noopener noreferrer" className="contact-method whatsapp">
                     <FaWhatsapp className="contact-icon" />
                     <span>WhatsApp</span>
-                </Link>
+                </a>
             </div>
 
             <div className="contact-form">
