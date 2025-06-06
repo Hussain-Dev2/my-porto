@@ -52,7 +52,6 @@ export default function AboutPage() {
               <li>Git</li>
               <li>Docker</li>
               <li>AWS</li>
-              <li>Firebase</li>
             </ul>
           </div>
         </div>
