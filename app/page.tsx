@@ -2,10 +2,14 @@
 import Link from "next/link";
 import Card from "./components_new/cards/card1";
 import Hero from "./components_new/hero/Hero";
+import { getServerField } from "next/dist/server/lib/render-server";
 
 // Home page component - Main landing page of the application
-export default function Home() {
+export default async function Home() {
+  const Session = await getServerField
+  console.log(Session)
   return (
+  
     // Main container with a dark gradient background
     <main className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800">
       {/* Hero section component for the landing page */}
