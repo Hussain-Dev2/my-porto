@@ -1,6 +1,6 @@
 "use client";
 import { signIn } from 'next-auth/react';
-import { useState, FormEvent } from 'react';
+import { useState,  } from 'react';
 import { FaGoogle, FaFacebook } from 'react-icons/fa';
 
 interface AuthModalProps {
@@ -17,10 +17,9 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose }) => {
     if (!isOpen) return null;
 
    
-    const handleGoogleSignIn = () => {
+    const handleGoogleSignIn = () => 
         // Implement Google sign-in logic here
-        signIn("google")
-    };
+        signIn("google");
 
     const handleFacebookSignIn = () => {
         // Implement Facebook sign-in logic here
@@ -46,7 +45,7 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose }) => {
                     </button>
                 </div>
 
-                <form onSubmit={handleSubmit} className="space-y-4">
+                <form  className="space-y-4">
                     {isSignUp && (
                         <input
                             type="text"
